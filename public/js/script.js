@@ -5,7 +5,7 @@ const onLoad = (event) => {
 
 /* If you need to wait for DOM ready */
 const onDomReady = (event) => {
-  console.info("document.DOMContentLoaded", event);
+    console.info("document.DOMContentLoaded", event);
 };
 
 /* If you do not need to wait for these events add code here */
@@ -13,4 +13,3 @@ const onDomReady = (event) => {
 /* Just ugly handlers */
 document.addEventListener("DOMContentLoaded", onDomReady);
 window.addEventListener("load", onLoad);
-
