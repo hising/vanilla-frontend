@@ -1,23 +1,36 @@
 {
-  "name": "vanilla-frontend",
-  "version": "1.0.0",
-  "description": "Get started quickly with a frontend. Live reload, css, js and a small css reset and header, content, footer",
-  "main": "index.js",
-  "scripts": {
-    "dev": "browser-sync start --serveStatic 'public' --files 'public' --port 3009 --browser 'google chrome' --index 'public/index.html'"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hising/vanilla-frontend.git"
-  },
-  "author": "Mattias Hising <mattias@yetric.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hising/vanilla-frontend/issues"
-  },
-  "homepage": "https://github.com/hising/vanilla-frontend#readme",
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "prettier": "^1.18.2"
-  }
+    "name": "vanilla-frontend",
+    "version": "1.0.0",
+    "description": "Get started quickly with a frontend. Live reload, css, js and a small css reset and header, content, footer",
+    "main": "index.js",
+    "scripts": {
+        "dev": "browser-sync start --serveStatic 'public' --files 'public' --port 3009 --browser 'google chrome' --index 'public/index.html'"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hising/vanilla-frontend.git"
+    },
+    "author": "Mattias Hising <mattias@yetric.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hising/vanilla-frontend/issues"
+    },
+    "homepage": "https://github.com/hising/vanilla-frontend#readme",
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "husky": "^3.0.4",
+        "lint-staged": "^9.2.5",
+        "prettier": "^1.18.2"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,css,json,md}": [
+            "prettier --write",
+            "git add"
+        ]
+    }
 }
