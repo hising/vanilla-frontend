@@ -7,4 +7,11 @@ $ npm install
 $ npm run dev
 ```
 
+## Used libs
+
+-   BrowserSync
+-   Husky
+-   Lint-staged
+-   Prettier
+
 Go to http://localhost:3009
