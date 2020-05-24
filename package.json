@@ -4,7 +4,7 @@
     "description": "Get started quickly with a frontend. Live reload, css, js and a small css reset and header, content, footer",
     "main": "index.js",
     "scripts": {
-        "dev": "browser-sync start --serveStatic 'public' --files 'public' --port 3009 --browser 'google chrome' --index 'public/index.html'"
+        "dev": "browser-sync start --serveStatic public --files public --port 3009 --browser 'google chrome' --index 'public/index.html'"
     },
     "repository": {
         "type": "git",
