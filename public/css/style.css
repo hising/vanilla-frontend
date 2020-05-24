@@ -17,19 +17,25 @@
     --nord15: #b48ead;
 }
 
-body > header {
+header {
     text-align: center;
     background-color: var(--nord3);
     color: var(--nord6);
     line-height: 60px;
 }
 
-.main {
-    padding: 24px;
-    min-height: calc(100vh - 120px);
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-body > footer {
+.main {
+    padding: 24px;
+    flex-grow: 1;
+}
+
+footer {
     background-color: var(--nord6);
     color: var(--nord3);
     font-size: 0.9rem;

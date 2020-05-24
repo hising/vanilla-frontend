@@ -9,9 +9,11 @@ $ npm run dev
 
 ## Used libs
 
--   BrowserSync
--   Husky
--   Lint-staged
--   Prettier
+-   BrowserSync for Live Editing
+-   Husky for Commit Hooks
+-   Lint-staged for running formatting on Commit
+-   Prettier for formatting
+-   Nord Colors for base CSS
+-   Reset.css for sensible default
 
 Go to http://localhost:3009
