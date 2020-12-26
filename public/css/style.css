@@ -30,6 +30,15 @@ header {
     min-height: 100vh;
 }
 
+a {
+    color: var(--nord10);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .main {
     padding: 24px;
     flex-grow: 1;
