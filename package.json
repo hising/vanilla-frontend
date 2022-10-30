@@ -17,7 +17,7 @@
     },
     "homepage": "https://github.com/hising/vanilla-frontend#readme",
     "devDependencies": {
-        "browser-sync": "^2.26.13",
+        "browser-sync": "^2.27.10",
         "husky": "^4.3.6",
         "lint-staged": "^10.5.3",
         "prettier": "^2.2.1"
